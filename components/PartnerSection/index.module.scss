@@ -1,0 +1,36 @@
+@import "@/assets/styles/breakpoints.scss";
+
+.cultureSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #2f55d3;
+
+  @include mobile {
+    padding-top: 5rem;
+    padding-bottom: calc(5rem + 68px);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  max-width: 40rem;
+
+  .contentTitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    color: #ffffff;
+  }
+  .contentDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #b2c3ff;
+    margin-top: 0.5rem;
+  }
+}

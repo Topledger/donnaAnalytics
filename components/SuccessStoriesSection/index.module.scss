@@ -1,0 +1,67 @@
+@import "@/assets/styles/breakpoints.scss";
+
+.successStoriesSection {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  border-top: 1px solid #e8e9fa;
+  background-color: #ffffff;
+
+  @include mobile {
+    padding-top: 5rem;
+    padding-bottom: calc(5rem + 68px);
+  }
+
+  .resultsContainer {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 144px;
+    }
+  }
+
+  .image {
+    position: absolute;
+    width: 279px;
+    height: 240px;
+    z-index: -1;
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .cultureContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    width: 270px;
+    height: 240px;
+    position: relative;
+    padding: 6rem 1rem 2rem 7.5rem;
+  }
+  .cultureTitle {
+    margin-top: 0.5rem;
+    color: #3c4452;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 19.36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    @include mobile {
+      font-size: 1.125rem;
+    }
+  }
+
+  .cultureAction {
+    width: 100%;
+    margin-top: 0.5rem;
+
+    a {
+      padding: 0;
+      height: auto;
+    }
+  }
+}

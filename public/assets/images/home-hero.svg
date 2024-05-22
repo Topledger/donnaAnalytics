@@ -1,0 +1,27 @@
+<svg width="512" height="351" viewBox="0 0 512 351" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="372.387" y="190" width="137" height="13" transform="rotate(90 372.387 190)" fill="#F469A4" />
+    <rect x="443.143" y="189.775" width="117.56" height="13.4354" transform="rotate(90 443.143 189.775)"
+        fill="#F469A4" />
+    <rect x="349.387" y="233" width="94" height="14" transform="rotate(90 349.387 233)" fill="#33D1BF" />
+    <rect x="419.631" y="226.722" width="80.6124" height="13.4354" transform="rotate(90 419.631 226.722)"
+        fill="#33D1BF" />
+    <rect x="325.387" y="205" width="122" height="13" transform="rotate(90 325.387 205)" fill="#2F55D3" />
+    <rect x="396.387" y="205" width="122" height="14" transform="rotate(90 396.387 205)" fill="#2F55D3" />
+    <rect x="302.072" y="230.081" width="77.2536" height="13.4354" transform="rotate(90 302.072 230.081)"
+        fill="#33D1BF" />
+    <rect x="278.56" y="220.005" width="87.3301" height="13.4354" transform="rotate(90 278.56 220.005)"
+        fill="#2F55D3" />
+    <rect x="255.048" y="253.593" width="53.7416" height="13.4354" transform="rotate(90 255.048 253.593)"
+        fill="#33D1BF" />
+    <circle cx="336.5" cy="175.5" r="155.5" stroke="#D2DDFF" stroke-width="40" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M109.115 172.981L0 281.304L19.3049 299.778L128.42 191.455L125.902 189.045L111.747 175.5L109.115 172.981Z"
+        fill="#F469A4" />
+    <path d="M116.669 169.622L111.747 175.5L125.902 189.045L131.777 183.057L116.669 169.622Z" fill="#2F55D3" />
+    <path d="M79 168L146 110L218 103L298 24.5" stroke="#E15454" stroke-width="6" stroke-linecap="round" />
+    <circle cx="216.5" cy="103" r="8" fill="white" stroke="#E15454" stroke-width="4" />
+    <circle cx="146.5" cy="111" r="8" fill="white" stroke="#E15454" stroke-width="4" />
+    <path
+        d="M277 105.542C277 154.997 236.927 195.084 187.5 195.084C138.073 195.084 98 154.997 98 105.542C98 56.0868 138.073 16 187.5 16C236.927 16 277 56.0868 277 105.542Z"
+        stroke="#2F55D3" stroke-width="12" />
+</svg>

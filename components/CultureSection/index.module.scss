@@ -1,0 +1,190 @@
+@import "@/assets/styles/breakpoints.scss";
+
+.cultureSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid #e8e9fa;
+
+  @include mobile {
+    padding-top: 5rem;
+    padding-bottom: calc(5rem + 68px);
+  }
+}
+
+.sectionHead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #3c4452;
+
+  flex-wrap: wrap;
+  span {
+    position: relative;
+    z-index: 1;
+    margin-left: 0.5rem;
+  }
+
+  @include mobile {
+    font-size: 1.5rem;
+    span {
+      margin-left: 0rem;
+    }
+  }
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: #a1aab2;
+
+  margin-top: 0.5rem;
+
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+
+.chartIcons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  float: right;
+
+  @include mobile {
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+}
+
+.chartIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(41.150001525878906px);
+
+  > img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  @include mobile {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.cultureContainer {
+  margin-top: 2.5rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 144px;
+  }
+}
+
+.culture {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  padding: 2.5rem;
+
+  @include mobile {
+    border: 1px solid #bfc5e5;
+    padding: 2rem;
+  }
+}
+.cultureContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.cultureTitle {
+  margin-top: 1.5rem;
+  color: #374151;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  @include mobile {
+    font-size: 1.125rem;
+  }
+}
+.cultureDescription {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.64px;
+
+  > * {
+    flex: 1;
+  }
+
+  @include mobile {
+    font-size: 0.875rem;
+  }
+}
+
+.cultureAction {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    border: 0;
+    background-image: linear-gradient(
+      to right,
+      #2f55d3 33%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-position: bottom;
+    background-size: 6px 2px;
+    background-repeat: repeat-x;
+    height: 1px;
+    flex: 1;
+  }
+}
+
+.ideaSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  > span:first-child {
+    display: inline-block;
+    min-width: 32px !important;
+  }
+}
+.bottomIcon {
+  min-width: 32px !important;
+}
+.bottomText {
+  padding: 0;
+  text-wrap: nowrap;
+
+  @include mobile {
+    text-wrap: wrap;
+  }
+}

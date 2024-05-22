@@ -1,0 +1,53 @@
+@import "@/assets/styles/breakpoints.scss";
+
+.sectionHead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: center;
+  color: #2f55d3;
+}
+
+.sectionTitle {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #3c4452;
+  margin-top: 12px;
+
+  flex-wrap: wrap;
+  span {
+    position: relative;
+    z-index: 1;
+    margin-left: 0.5rem;
+  }
+
+  @include mobile {
+    font-size: 1.5rem;
+    span {
+      margin-left: 0rem;
+    }
+  }
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: #a1aab2;
+
+  margin-top: 0.5rem;
+
+  @include mobile {
+    font-size: 1rem;
+  }
+}
