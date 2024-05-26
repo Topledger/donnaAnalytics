@@ -8,7 +8,7 @@
 
   @include mobile {
     padding-top: 5rem;
-    padding-bottom: calc(5rem + 68px);
+    padding-bottom: 5rem;
   }
 }
 
@@ -16,6 +16,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  @include mobile {
+    gap: 5rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 .sectionHead {
@@ -70,4 +75,13 @@
 
 .cultureAction {
   margin-top: 2rem;
+}
+
+.image {
+  overflow: hidden;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
 }

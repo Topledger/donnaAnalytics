@@ -12,6 +12,11 @@
   line-height: 16.94px;
   text-align: center;
   color: #2f55d3;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 .sectionTitle {
@@ -31,7 +36,7 @@
   }
 
   @include mobile {
-    font-size: 1.5rem;
+    font-size: 18px;
     span {
       margin-left: 0rem;
     }
@@ -48,6 +53,6 @@
   margin-top: 0.5rem;
 
   @include mobile {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }

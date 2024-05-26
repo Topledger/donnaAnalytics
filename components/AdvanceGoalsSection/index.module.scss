@@ -16,6 +16,11 @@
   display: flex;
   gap: 10rem;
   margin-top: 80px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 }
 
 .sectionHead {
@@ -23,6 +28,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 2.5rem;
 }
 
 .sectionTitle {

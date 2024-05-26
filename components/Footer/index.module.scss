@@ -3,7 +3,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 0;
   gap: 2rem;
 
@@ -12,9 +12,13 @@
   }
   @include max-width(xl) {
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 4rem;
     gap: 1rem;
     grid-template-columns: 2fr 1fr;
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -51,6 +55,10 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1.5rem;
+
+  @include mobile {
+    padding: 0.5rem 0rem;
+  }
 }
 
 .contactUsContainer {
@@ -63,7 +71,7 @@
   letter-spacing: 0.96px;
   font-weight: 400;
   @include mobile {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -96,4 +104,8 @@
     width: 100vw;
     text-align: center;
   }
+}
+
+.privacyPolicy {
+  font-size: 14px;
 }

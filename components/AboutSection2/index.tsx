@@ -1,10 +1,32 @@
 import Image from "next/image";
+import cx from "clsx";
+
 import Section from "@/components/Section";
 
 import { getId } from "@/helpers/idHelper";
-import SectionHead from "../SectionHead";
 
 import styles from "./index.module.scss";
+import MobileHidden from "../MobileHidden";
+import MobileOnly from "../MobileOnly";
+
+const ImageSegment = ({ className, ...props }: any) => (
+  <div className={cx(styles.image, className)} {...props}>
+    <Image
+      src="/assets/images/about-section-2.svg"
+      width={410}
+      height={351}
+      alt="Advancing your goals"
+    />
+    <span className={styles.imageText1}>
+      Why we do
+      <br />
+      what we do
+    </span>
+    <span className={styles.imageText2}>
+      Fueling Data-Driven Decisions for a Smarter Tomorrow
+    </span>
+  </div>
+);
 
 const AboutSection2 = ({}: {}) => {
   return (
@@ -13,22 +35,9 @@ const AboutSection2 = ({}: {}) => {
       id={getId("Advancing your goals")}
     >
       <div className={styles.sectionBody}>
-        <div className={styles.image}>
-          <Image
-            src="/assets/images/about-section-2.svg"
-            width={410}
-            height={351}
-            alt="Advancing your goals"
-          />
-          <span className={styles.imageText1}>
-            Why we do
-            <br />
-            what we do
-          </span>
-          <span className={styles.imageText2}>
-            Fueling Data-Driven Decisions for a Smarter Tomorrow
-          </span>
-        </div>
+        <MobileHidden>
+          <ImageSegment />
+        </MobileHidden>
         <div className={styles.sectionHead}>
           <div className={styles.quote}>
             <p className={styles.quoteText}>
@@ -37,6 +46,9 @@ const AboutSection2 = ({}: {}) => {
             </p>
             <p className={styles.quoteAuthor}>W. Edwards Deming</p>
           </div>
+          <MobileOnly>
+            <ImageSegment />
+          </MobileOnly>
           <div className={styles.description}>
             At Donna Analytics, we&apos;re passionate about transforming data
             into actionable insights. We empower businesses to make smarter
