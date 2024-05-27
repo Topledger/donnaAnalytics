@@ -3,13 +3,7 @@
 .cultureSection {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
-  border-top: 1px solid #e8e9fa;
   background-color: #f7fafe;
-
-  @include mobile {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 }
 
 .image {
@@ -20,7 +14,7 @@
     top: 5rem;
     font-size: 16px;
     font-weight: 700;
-    line-height: 19.36px;
+    line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: center;
     color: #3257d4;
@@ -32,7 +26,7 @@
     width: 10rem;
     font-size: 1rem;
     font-weight: 700;
-    line-height: 19.36px;
+    line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: left;
     color: #3c4452;
@@ -45,18 +39,20 @@
     }
 
     .imageText1 {
-      left: 2.5rem;
-      top: 5.75rem;
+      left: 3.1rem;
+      top: 5.85rem;
       font-size: 12px;
     }
     .imageText2 {
       font-size: 12px;
       left: 10rem;
+      top: 10rem;
     }
   }
 }
 
 .sectionHead {
+  justify-content: center;
   .quote {
     background-color: #faede1;
     padding: 2rem;
@@ -65,13 +61,13 @@
     .quoteText {
       font-size: 1rem;
       font-weight: 500;
-      line-height: 22.4px;
+      line-height: 1.4;
       color: #3c4452;
     }
     .quoteAuthor {
       font-size: 1rem;
       font-weight: 500;
-      line-height: 22.4px;
+      line-height: 1.4;
       color: #70798a;
       margin-top: 1.5rem;
     }
@@ -83,7 +79,7 @@
   .description {
     font-size: 1rem;
     font-weight: 500;
-    line-height: 22.4px;
+    line-height: 1.4;
     color: #67798a;
     margin-top: 1.5rem;
   }
@@ -97,8 +93,6 @@
 .sectionBody {
   display: flex;
   gap: 10rem;
-  margin-top: 80px;
-
   @include mobile {
     margin-top: auto;
   }
@@ -115,7 +109,7 @@
   position: relative;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #3c4452;
 
   flex-wrap: wrap;
@@ -136,7 +130,7 @@
 .sectionDescription {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #a1aab2;
 
   margin-top: 0.5rem;
@@ -186,7 +180,7 @@
   margin-top: 0.5rem;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16.94px;
+  line-height: 1.4;
   color: #67798a;
 
   > * {

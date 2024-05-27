@@ -19,7 +19,7 @@ const Culture = ({
     <div className={styles.cultureContent}>
       <h3 className={styles.cultureTitle}>{title}</h3>
       <div className={styles.cultureDescription}>
-        <span>{description}</span>
+        <span className={styles.cultureDescriptionText}>{description}</span>
         <MobileHidden>
           <div className={styles.chartIcons}>
             {["#F1F5FF", "#F8F0FF", "#EDFAF2", "#FCF4EF", "#F2EFFF"].map(

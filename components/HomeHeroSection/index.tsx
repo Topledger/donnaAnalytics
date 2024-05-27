@@ -5,6 +5,7 @@ import { getAction } from "@/components/ArticleCard/ArticleFooter";
 import { getId } from "@/helpers/idHelper";
 
 import styles from "./index.module.scss";
+import QueryFormModal from "../QueryForm/QueryFormModal";
 
 const Result = ({
   image,
@@ -53,9 +54,9 @@ const HomeHeroSection = ({
             {getAction({
               type: "link",
               text: "Try it out",
-              href: "/web3-teams",
               primary: true,
               forwardArrow: true,
+              // onClick: () => QueryFormModal.show(),
             })}
           </div>
         </div>

@@ -3,7 +3,6 @@
 .successStoriesSection {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
-  border-top: 1px solid #e8e9fa;
   background-color: #ffffff;
 
   @include mobile {
@@ -13,11 +12,12 @@
 
   .resultsContainer {
     margin-top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
     @include mobile {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: center;
       gap: 144px;
     }
   }
@@ -35,18 +35,22 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 20rem;
+    max-width: 16rem;
     width: 270px;
     height: 240px;
     position: relative;
-    padding: 6rem 1rem 2rem 7.5rem;
+    padding: 5rem 0.5rem 2rem 8.5rem;
+
+    @include mobile {
+      padding: 4rem 0.5rem 2rem 8rem;
+    }
   }
   .cultureTitle {
     margin-top: 0.5rem;
     color: #3c4452;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    line-height: 19.36px;
+    line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: left;
 
@@ -62,6 +66,9 @@
     a {
       padding: 0;
       height: auto;
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      color: #2f55d3;
     }
   }
 }

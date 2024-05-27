@@ -3,7 +3,6 @@
 .cultureSection {
   padding-top: 80px;
   padding-bottom: 80px;
-  border-top: 1px solid #e8e9fa;
 
   @include mobile {
     padding-top: 5rem;
@@ -21,7 +20,7 @@
   position: relative;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #3c4452;
 
@@ -43,7 +42,7 @@
 .sectionDescription {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #a1aab2;
 
@@ -60,12 +59,13 @@
   gap: 1.5rem;
   margin-top: 1rem;
   float: right;
+  justify-content: space-between;
 
   @include mobile {
     flex-direction: row;
     position: relative;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     justify-content: space-between;
     width: 100%;
     gap: 0.5rem;
@@ -77,8 +77,8 @@
 }
 
 .chartIcon {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -129,22 +129,24 @@
 .cultureTitle {
   margin-top: 1.5rem;
   color: #374151;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
 
   @include mobile {
     font-size: 1.125rem;
+    margin-top: 2.5rem;
   }
 }
 .cultureDescription {
   display: flex;
   flex: 1;
   align-items: center;
-  margin-top: 1.5rem;
-  color: #374151;
+  margin-top: 0rem;
+  color: #67798a;
   font-size: 1rem;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.64px;
+  font-weight: 500;
 
   > * {
     flex: 1;
@@ -152,12 +154,17 @@
 
   @include mobile {
     font-size: 0.875rem;
+    margin-top: 0.5rem;
   }
+}
+
+.cultureDescriptionText {
+  flex: 1.5;
 }
 
 .cultureAction {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   display: flex;
   align-items: center;
   gap: 10px;

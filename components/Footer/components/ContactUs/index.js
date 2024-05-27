@@ -13,11 +13,11 @@ const ContactUs = () => {
         <Button.Link
           tertiary
           className={styles.mailLink}
-          href="https://maps.app.goo.gl/UrpxLVteHYZJKVhUA"
+          href="https://maps.app.goo.gl/EAUHmwX5rTsJWG9RA"
           target="_blank"
           noArrow
         >
-          Fraser Street #05-25 Duo Tower Singapore
+          425, Lal Garh, Bikaner, Rajasthan, 334001
         </Button.Link>
       </div>
       <div className={styles.row}>

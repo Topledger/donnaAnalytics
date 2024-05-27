@@ -1,9 +1,8 @@
 @import "@/assets/styles/breakpoints.scss";
 
 .cultureSection {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-top: 1px solid #e8e9fa;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #f7fafe;
 
   @include mobile {
@@ -22,7 +21,7 @@
   position: relative;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #3c4452;
 
@@ -44,7 +43,7 @@
 .sectionDescription {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   color: #a1aab2;
 
@@ -91,13 +90,14 @@
 }
 
 .resultsContainer {
-  margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4.375rem;
+  display: flex;
+  width: 100%;
   gap: 2rem;
   text-align: center;
+  justify-content: center;
   @include mobile {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 56px;
   }
 }
@@ -119,6 +119,10 @@
   display: flex;
   flex-direction: column;
   max-width: 20rem;
+
+  @include mobile {
+    max-width: 100%;
+  }
 }
 .cultureTitle {
   margin-top: 0.5rem;
@@ -137,7 +141,7 @@
   margin-top: 0.5rem;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16.94px;
+  line-height: 1.4;
   text-align: center;
   color: #67798a;
 
@@ -153,6 +157,12 @@
 .cultureAction {
   width: 100%;
   margin-top: 0.5rem;
+
+  a {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #2f55d3;
+  }
 }
 
 .ideaSection {

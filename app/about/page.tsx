@@ -31,7 +31,7 @@ const successStories = [
   {
     id: 3,
     image: "/assets/images/success-stories-3.svg",
-    title: "Linking real-world data to blockchains",
+    title: "Linking real‑world data to blockchains",
     description: "Our APIs Streamline Solana development and data management.",
     action: {
       type: "link",

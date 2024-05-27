@@ -27,20 +27,19 @@
   .contentTitle {
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.78px;
+    line-height: 1.4;
     color: #ffffff;
   }
   .contentDescription {
     font-size: 1rem;
     font-weight: 500;
-    line-height: 19.36px;
+    line-height: 1.4;
     color: #b2c3ff;
     margin-top: 0.5rem;
   }
 }
 
 .cultureAction {
-  margin-top: 2.5rem;
   a {
     color: #2f55d3;
     background: #fff;
@@ -51,5 +50,9 @@
         fill: #2f55d3;
       }
     }
+  }
+
+  @include mobile {
+    margin-top: 2.5rem;
   }
 }

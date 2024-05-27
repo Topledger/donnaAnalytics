@@ -13,7 +13,7 @@ const PartnerSection = ({}: any) => {
     >
       <div className={styles.content}>
         <h3 className={styles.contentTitle}>
-          Dona analytics is your partner in data culture
+          Donna analytics is your partner in data culture
         </h3>
         <p className={styles.contentDescription}>
           We collaborate with various teams in an organization to identify their

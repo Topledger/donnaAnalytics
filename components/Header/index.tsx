@@ -58,8 +58,8 @@ const Header = ({ className }: { className?: string }) => {
         <Button.Link className={styles.logoContainer} href="/" tertiary>
           <Image
             src={"/assets/images/logo/donna-analytics-full.svg"}
-            width={144}
-            height={50}
+            width={122}
+            height={24}
             alt="Top Ledger logo"
           />
         </Button.Link>

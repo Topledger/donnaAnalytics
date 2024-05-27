@@ -69,7 +69,7 @@ header {
   margin: 0;
   color: white;
   font-size: 78px;
-  line-height: 95px;
+  line-height: 1.4;
   text-shadow: 1px 1px #00000069;
   text-align: center;
   width: 100%;
@@ -121,7 +121,7 @@ a.nextBtn {
   .heroContent h1 {
     font-size: 35px;
     justify-content: center;
-    line-height: 1;
+    line-height: 1.4;
     padding: 20px 0;
   }
   .heroContent {
@@ -153,7 +153,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 140%;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.02em;
   color: #eef2fc;
@@ -193,7 +193,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 500;
   font-size: 1.3125rem;
-  line-height: 26px;
+  line-height: 1.4;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -204,7 +204,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 52px;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #1a3989;
   opacity: 0.54;
@@ -242,7 +242,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 29px;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   margin: 0;
   color: #6588e1;
@@ -270,7 +270,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 600;
   font-size: 1.3125rem;
-  line-height: 26px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.04em;
   color: #1a3989;
@@ -287,7 +287,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 120%;
+  line-height: 1.4;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -295,7 +295,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -362,7 +362,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 120%;
+  line-height: 1.4;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -370,7 +370,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -416,7 +416,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 600;
   font-size: 1.3125rem;
-  line-height: 26px;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #1a3989;
 }
@@ -442,7 +442,7 @@ a.nextBtn {
   padding: 100px 100px;
 }
 .clientContent p {
-  line-height: 22px;
+  line-height: 1.4;
   color: rgba(0, 0, 0, 0.54);
   position: relative;
   z-index: 1;
@@ -476,7 +476,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 101.2%;
+  line-height: 1.4;
   align-items: center;
   letter-spacing: 0.025em;
   margin: 0;
@@ -520,7 +520,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
-  line-height: 120%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #eef2fc;
   margin: 0;
@@ -536,7 +536,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 120%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #eef2fc;
   margin-bottom: 0.625rem;
@@ -545,7 +545,7 @@ a.nextBtn {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 120%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #eef2fc;
 }
@@ -568,7 +568,7 @@ a.nextBtn {
 ul.address a {
   font-size: 17px !important;
   font-weight: 300;
-  line-height: 120%;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   color: #eef2fc;
 }

@@ -38,12 +38,14 @@ $header-height: 88px;
   width: 100%;
   display: flex;
   max-width: 1280px;
+  align-items: center;
 
   @include max-width(xl) {
     max-width: 1024px;
   }
   @include mobile {
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
 }
 
@@ -55,6 +57,18 @@ $header-height: 88px;
   padding: 0 0px;
   margin-right: 1.5rem;
   width: 10rem;
+
+  @include mobile {
+    width: auto;
+    flex: 1;
+    justify-content: center;
+    margin-right: 56px;
+
+    img {
+      width: 80px;
+      height: 16.27px;
+    }
+  }
 }
 
 .headerLinks {
@@ -78,7 +92,7 @@ $header-height: 88px;
       flex-direction: column;
       position: absolute;
       z-index: 10;
-      align-items: flex-start;
+      align-items: center;
       left: 0;
       padding: 1rem 1.5rem;
       background-color: #e7ecf3;
@@ -87,6 +101,7 @@ $header-height: 88px;
       top: $header-height;
       overflow: auto;
       justify-content: flex-start;
+      gap: 1rem;
     }
   }
 }

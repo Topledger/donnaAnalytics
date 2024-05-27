@@ -1,20 +1,14 @@
 @import "@/assets/styles/breakpoints.scss";
 
 .cultureSection {
-  padding-top: 120px;
-  padding-bottom: 188px;
-  border-top: 1px solid #e8e9fa;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #ffffff;
-
-  @include mobile {
-    padding-top: 5rem;
-    padding-bottom: calc(5rem + 68px);
-  }
 }
 
 .sectionBody {
   display: flex;
-  gap: 10rem;
+  gap: 0rem;
   margin-top: 80px;
 
   @include mobile {
@@ -35,7 +29,7 @@
   position: relative;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #3c4452;
 
   flex-wrap: wrap;
@@ -56,7 +50,7 @@
 .sectionDescription {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #a1aab2;
 
   margin-top: 0.5rem;
@@ -139,9 +133,9 @@
   flex: 1;
   align-items: center;
   margin-top: 0.5rem;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 16.94px;
+  line-height: 1.4;
   color: #67798a;
 
   > * {
@@ -177,5 +171,13 @@
 
   @include mobile {
     text-wrap: wrap;
+  }
+}
+
+.image {
+  flex: 1;
+
+  img {
+    width: 100%;
   }
 }

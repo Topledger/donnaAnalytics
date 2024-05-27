@@ -11,11 +11,10 @@
     padding: 0rem 4rem;
   }
   @include max-width(sm) {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
   }
   @include mobile {
     height: auto !important;
-    
   }
 }
 .container {
