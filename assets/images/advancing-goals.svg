@@ -1,0 +1,12 @@
+<svg width="334" height="296" viewBox="0 0 334 296" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="176" cy="147" r="136.5" fill="white" stroke="#2F55D3" />
+    <circle cx="77" cy="80" r="60.5" fill="#2F55D3" stroke="#D2DDFF" stroke-width="33" />
+    <circle cx="25" cy="25" r="17" transform="matrix(-1 0 0 1 256 0)" fill="#2F55D3" stroke="#D2DDFF"
+        stroke-width="16" />
+    <circle cx="25" cy="25" r="17" transform="matrix(-1 0 0 1 334 115)" fill="#2F55D3" stroke="#D2DDFF"
+        stroke-width="16" />
+    <circle cx="25" cy="25" r="17" transform="matrix(-1 0 0 1 257 246)" fill="#2F55D3" stroke="#D2DDFF"
+        stroke-width="16" />
+    <circle cx="25" cy="25" r="17" transform="matrix(-1 0 0 1 107 219)" fill="#2F55D3" stroke="#D2DDFF"
+        stroke-width="16" />
+</svg>
