@@ -27,23 +27,26 @@ export const unlockBackgroundScroll = () => {
 };
 
 export const WrapModal = (name: string, Component: any) => {
-  /** @type {ReturnType<typeof createRoot>>} */
-  let root: any = null;
-
+  let root: ReturnType<typeof createRoot> | null = null;
+  const rootId = `modal-root-${name}`;
+  let rootDiv: HTMLDivElement | null = null;
+  const transitionTime = 500;
   function init() {
     if (!root) {
-      const div = document.createElement("div");
-      div.id = `modal-root-${name}`;
-      document.body.append(div);
-      root = createRoot(div);
+      rootDiv = document.createElement("div");
+      rootDiv.id = rootId;
+      rootDiv.style.transition = `all ${transitionTime}ms ease`;
+      rootDiv.style.opacity = "1";
+      document.body.append(rootDiv);
+      root = createRoot(rootDiv);
     }
   }
 
   Component.show = (props: any) => {
     init();
-    root.render(null);
+    root?.render(null);
     lockBackgroundScroll();
-    root.render(
+    root?.render(
       <Modal onShadowClick={Component.hide}>
         <Component {...props} />
       </Modal>
@@ -51,8 +54,21 @@ export const WrapModal = (name: string, Component: any) => {
   };
   Component.hide = () => {
     init();
-    root.render(null);
-    unlockBackgroundScroll();
+    if (rootDiv) {
+      rootDiv.style.opacity = "0";
+      rootDiv.style.zIndex = "100";
+      rootDiv.style.position = "absolute";
+    }
+    setTimeout(() => {
+      root?.render(null);
+      unlockBackgroundScroll();
+
+      if (rootDiv) {
+        rootDiv.style.opacity = "1";
+        rootDiv.style.zIndex = "unset";
+        rootDiv.style.position = "relative";
+      }
+    }, transitionTime);
   };
 
   return Component;

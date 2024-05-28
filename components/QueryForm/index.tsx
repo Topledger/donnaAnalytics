@@ -94,22 +94,35 @@ const isInValidForm = (fields: any[], formValues: any) => {
   return fields.some((field) => formValues[`${field}_valid`] !== "true");
 };
 
-let grecaptcha: any;
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
+
+function renderCaptcha(element: HTMLElement) {
+  window?.grecaptcha.ready(() => {
+    if (!element?.querySelector(".g-recaptcha-response")) {
+      window?.grecaptcha.render(element, {
+        sitekey: "6LcmEmYpAAAAAOqbvQqTFakTlhMDuUneEm55ZJxE",
+      });
+      console.log("captcha rendered");
+    }
+  });
+}
 
 const QueryForm = () => {
   const formRef = useRef(null);
-  const captchaRef = useRef(null);
+  const captchaRef = useRef<any>(null);
   const [formValues, setFormValues] = useState<any>({});
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onScriptLoad = useCallback(() => {
-    console.log("Script loaded", grecaptcha);
-    grecaptcha.ready(() => {
-      grecaptcha.render(captchaRef.current, {
-        sitekey: "6LcmEmYpAAAAAOqbvQqTFakTlhMDuUneEm55ZJxE",
-      });
-    });
+    console.log("Script loaded", window?.grecaptcha);
+    if (typeof window?.grecaptcha !== "undefined") {
+      renderCaptcha(captchaRef.current);
+    }
   }, []);
 
   const onFormChange = useCallback((e: any) => {
@@ -130,7 +143,7 @@ const QueryForm = () => {
         setIsLoading(true);
         await postFeedback(
           formValues,
-          "AKfycbxlvja8uStuyNJ-AtGF78Any2DOvHH5TAWZ_0S2blnjBhyV6pLGL6Wzy81AMcYilmpqfA"
+          "AKfycbytxJMJaVzbF1mx5-CNNmzoZblWiQq5jbfzKFMB5uxibSR3n3jEboE0MkJcaInOsLj7"
         );
         setIsLoading(false);
         setIsSubmitted(true);
@@ -164,13 +177,22 @@ const QueryForm = () => {
   }, []);
 
   useEffect(() => {
-    if (typeof grecaptcha !== "undefined") {
-      grecaptcha.ready(() => {
-        grecaptcha.render(captchaRef.current, {
-          sitekey: "6LcmEmYpAAAAAOqbvQqTFakTlhMDuUneEm55ZJxE",
-        });
-      });
+    let retries = 0;
+    let timer: NodeJS.Timeout;
+    const TIMEOUT = 200;
+    const MAX_RETRIES = 10;
+
+    function checkRecaptcha() {
+      if (typeof window?.grecaptcha !== "undefined") {
+        renderCaptcha(captchaRef.current);
+      } else if (retries < MAX_RETRIES) {
+        timer = setTimeout(checkRecaptcha, TIMEOUT);
+      }
     }
+
+    checkRecaptcha();
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -192,20 +214,17 @@ const QueryForm = () => {
                 <div className={styles.imageContainer}>
                   <Image
                     className={styles.image}
-                    src="/assets/images/icon-rocket.png"
+                    src="/assets/images/feedback-left.svg"
                     alt="rocket"
-                    width={50}
-                    height={50}
+                    width={240}
+                    height={207}
                   />
                 </div>
-                <h2 className={styles.title}>
-                  Fuel decision-making <div>& skyrocket productivity</div>
-                </h2>
               </div>
               <div className={styles.bottomSection}>
                 <p>
-                  Top Ledger tirelessly fosters a data-driven culture in your
-                  organization
+                  Donna Analytics tirelessly fosters a data-driven culture in
+                  your organization
                 </p>
                 <ul className={styles.list}>
                   <li>
@@ -215,7 +234,7 @@ const QueryForm = () => {
                       height={16}
                       width={16}
                     />{" "}
-                    High-caliber team
+                    An expert team
                   </li>
                   <li>
                     <SvgIcon
@@ -224,7 +243,7 @@ const QueryForm = () => {
                       height={16}
                       width={16}
                     />{" "}
-                    Uncompromising analytics
+                    Rigorous analytics
                   </li>
                   <li>
                     <SvgIcon
@@ -233,7 +252,7 @@ const QueryForm = () => {
                       height={16}
                       width={16}
                     />{" "}
-                    Quick turnaround time
+                    Swift turnaround times
                   </li>
                   <li>
                     <SvgIcon
@@ -242,7 +261,7 @@ const QueryForm = () => {
                       height={16}
                       width={16}
                     />{" "}
-                    One-stop analytics platform
+                    An all-in-one analytics platform
                   </li>
                 </ul>
               </div>
@@ -328,19 +347,6 @@ const QueryForm = () => {
             </div>
             <div className={styles.successLine2}>
               Our team will get back to you within a day!
-            </div>
-            <div className={styles.successLine3}>
-              See what&apos;s possible with our public dashboards
-            </div>
-            <div className={styles.successLine4}>
-              <Button.Link
-                href="/dashboards"
-                color="#085ED4"
-                secondary
-                target="_blank"
-              >
-                Public dashboards
-              </Button.Link>
             </div>
           </div>
         </div>

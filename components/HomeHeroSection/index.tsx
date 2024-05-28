@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Section from "@/components/Section";
 
@@ -6,27 +8,6 @@ import { getId } from "@/helpers/idHelper";
 
 import styles from "./index.module.scss";
 import QueryFormModal from "../QueryForm/QueryFormModal";
-
-const Result = ({
-  image,
-  title,
-  description,
-  action,
-  bottomContent: { text } = { text: "" },
-}: any) => {
-  return (
-    <div className={styles.cultureContent}>
-      <div>
-        <Image src={image} alt={title} width={53} height={70.5} />
-      </div>
-      <h3 className={styles.cultureTitle}>{title}</h3>
-      <div className={styles.cultureDescription}>
-        <span>{description}</span>
-      </div>
-      <div className={styles.cultureAction}>{getAction(action)}</div>
-    </div>
-  );
-};
 
 const HomeHeroSection = ({
   tagline,
@@ -56,7 +37,7 @@ const HomeHeroSection = ({
               text: "Try it out",
               primary: true,
               forwardArrow: true,
-              // onClick: () => QueryFormModal.show(),
+              onClick: () => QueryFormModal.show(),
             })}
           </div>
         </div>

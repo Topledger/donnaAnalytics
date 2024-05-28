@@ -1,4 +1,6 @@
 "use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Section from "@/components/Section";
 import cx from "clsx";
@@ -8,7 +10,9 @@ import { getId } from "@/helpers/idHelper";
 import SectionHead from "../SectionHead";
 
 import styles from "./index.module.scss";
-import { useEffect, useRef, useState } from "react";
+import MobileHidden from "../MobileHidden";
+import MobileOnly from "../MobileOnly";
+import Accordion from "../Accordion";
 
 const Journey = ({ title, description, onClick, selected }: any) => {
   return (
@@ -59,30 +63,46 @@ const EmpoweringJourneySection = ({ journeys = [] }: { journeys: any[] }) => {
         Empowering Your Blockchain Journey
       </SectionHead>
       <div className={styles.sectionBody}>
-        <div className={styles.resultsContainer}>
-          {journeys?.map((dataCulture: any, index: number) => (
-            <Journey
-              {...dataCulture}
-              key={dataCulture.id}
-              onClick={() => updateSelectedJourney(index)}
-              selected={index === selectedJourney}
-            />
-          ))}
-        </div>
-        <div className={styles.image}>
-          <Image src={image} alt={title} width={419} height={362} />
-        </div>
-        <div className={styles.indicators}>
-          {journeys.map((journey: any, index: number) => (
-            <span
-              key={journey?.id}
-              className={cx(styles.indicator, {
-                [styles.selectedIndicator]: index === selectedJourney,
-              })}
-              onClick={() => updateSelectedJourney(index)}
-            />
-          ))}
-        </div>
+        <MobileHidden>
+          <div className={styles.resultsContainer}>
+            {journeys?.map((journey: any, index: number) => (
+              <Journey
+                {...journey}
+                key={journey.id}
+                onClick={() => updateSelectedJourney(index)}
+                selected={index === selectedJourney}
+              />
+            ))}
+          </div>
+          <div className={styles.image}>
+            <Image src={image} alt={title} width={419} height={362} />
+          </div>
+          <div className={styles.indicators}>
+            {journeys.map((journey: any, index: number) => (
+              <span
+                key={journey?.id}
+                className={cx(styles.indicator, {
+                  [styles.selectedIndicator]: index === selectedJourney,
+                })}
+                onClick={() => updateSelectedJourney(index)}
+              />
+            ))}
+          </div>
+        </MobileHidden>
+        <MobileOnly>
+          <div className={styles.accordionContainer}>
+            {journeys.map((journey, index) => (
+              <Accordion
+                key={journey.id}
+                title={journey.title}
+                description={journey.description}
+                image={journey.image}
+                isOpen={index === selectedJourney}
+                onToggle={() => updateSelectedJourney(index)}
+              />
+            ))}
+          </div>
+        </MobileOnly>
       </div>
       <div className={styles.cultureAction}>{getAction(action)}</div>
     </Section>

@@ -55,41 +55,6 @@
   }
 }
 
-.chartIcons {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  float: right;
-
-  @include mobile {
-    position: relative;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    justify-content: space-between;
-  }
-}
-
-.chartIcon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(41.150001525878906px);
-
-  > img {
-    width: 24px !important;
-    height: 24px !important;
-  }
-
-  @include mobile {
-    width: 56px;
-    height: 56px;
-  }
-}
-
 .sectionBody {
   display: flex;
   gap: 80px;
