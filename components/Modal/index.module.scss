@@ -37,4 +37,9 @@
 
 .modalContent {
   border-radius: 0.5rem;
+
+  @include mobile {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+  }
 }

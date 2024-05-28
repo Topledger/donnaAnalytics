@@ -102,7 +102,7 @@ declare global {
 
 function renderCaptcha(element: HTMLElement) {
   window?.grecaptcha.ready(() => {
-    if (!element?.querySelector(".g-recaptcha-response")) {
+    if (!element?.querySelector(".g-recaptcha-response") && element) {
       window?.grecaptcha.render(element, {
         sitekey: "6LcmEmYpAAAAAOqbvQqTFakTlhMDuUneEm55ZJxE",
       });
@@ -111,7 +111,7 @@ function renderCaptcha(element: HTMLElement) {
   });
 }
 
-const QueryForm = () => {
+const QueryForm = ({ hide }: { hide?: () => void }) => {
   const formRef = useRef(null);
   const captchaRef = useRef<any>(null);
   const [formValues, setFormValues] = useState<any>({});
@@ -147,6 +147,9 @@ const QueryForm = () => {
         );
         setIsLoading(false);
         setIsSubmitted(true);
+        setTimeout(() => {
+          hide?.();
+        }, 4000);
       } catch (err) {
         console.log("error", err);
       }

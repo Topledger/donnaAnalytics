@@ -48,7 +48,7 @@ export const WrapModal = (name: string, Component: any) => {
     lockBackgroundScroll();
     root?.render(
       <Modal onShadowClick={Component.hide}>
-        <Component {...props} />
+        <Component {...props} hide={Component.hide} />
       </Modal>
     );
   };
