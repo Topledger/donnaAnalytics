@@ -1,98 +1,97 @@
 @import "@/assets/styles/breakpoints.scss";
 
-.cultureSection {
-  padding-top: 104px;
-  padding-bottom: 104px;
+.homeHeroSection {
+  padding-top: 104px !important;
+  padding-bottom: 104px !important;
   border-top: 1px solid #ffffff;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 
   @include mobile {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
-}
+  .sectionBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
-.sectionBody {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-
-  @include mobile {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-
-.sectionHead {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.tagline {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #3257d4;
-
-  @include mobile {
-    font-size: 12px;
-  }
-}
-
-.sectionTitle {
-  position: relative;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #3c4452;
-  margin-top: 1rem;
-
-  flex-wrap: wrap;
-  span {
-    position: relative;
-    z-index: 1;
-    margin-left: 0.5rem;
-  }
-
-  @include mobile {
-    font-size: 1.5rem;
-    span {
-      margin-left: 0rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
     }
   }
-}
 
-.sectionDescription {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #67798a;
-  max-width: 400px;
-
-  margin-top: 0.5rem;
-
-  @include mobile {
-    font-size: 1rem;
+  .sectionHead {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-}
 
-.cultureAction {
-  margin-top: 2rem;
-}
+  .tagline {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #3257d4;
 
-.image {
-  @include mobile {
-    overflow: hidden;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
-    margin-left: -1.5rem;
-    padding-left: 1.5rem;
-    margin-top: 7.5rem;
+    @include mobile {
+      font-size: 12px;
+    }
+  }
 
-    img {
-      margin-left: -5rem;
+  .sectionTitle {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #3c4452;
+    margin-top: 1rem;
+
+    flex-wrap: wrap;
+    span {
+      position: relative;
+      z-index: 1;
+      margin-left: 0.5rem;
+    }
+
+    @include mobile {
+      font-size: 1.5rem;
+      span {
+        margin-left: 0rem;
+      }
+    }
+  }
+
+  .sectionDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #67798a;
+    max-width: 400px;
+
+    margin-top: 0.5rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  .cultureAction {
+    margin-top: 2rem;
+  }
+
+  .image {
+    @include mobile {
+      overflow: hidden;
+      margin-right: -1.5rem;
+      padding-right: 1.5rem;
+      margin-left: -1.5rem;
+      padding-left: 1.5rem;
+      margin-top: 7.5rem;
+
+      img {
+        margin-left: -5rem;
+      }
     }
   }
 }

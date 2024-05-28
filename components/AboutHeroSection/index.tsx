@@ -18,7 +18,7 @@ const AboutHeroSection = ({
   image: string;
 }) => {
   return (
-    <Section className={styles.cultureSection} id={getId("Home Hero")}>
+    <Section className={styles.aboutHeroSection} id={getId("Home Hero")}>
       <div className={styles.sectionBody}>
         <div className={styles.sectionHead}>
           <div className={styles.tagline}>{tagline}</div>

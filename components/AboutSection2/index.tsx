@@ -31,7 +31,7 @@ const ImageSegment = ({ className, ...props }: any) => (
 const AboutSection2 = ({}: {}) => {
   return (
     <Section
-      className={styles.cultureSection}
+      className={styles.aboutSection2}
       id={getId("Advancing your goals")}
     >
       <div className={styles.sectionBody}>

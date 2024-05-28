@@ -30,7 +30,7 @@ const Goal = ({ title, description }: any) => {
 const AdvanceGoalsSection = ({ goals = [] }: { goals: any[] }) => {
   return (
     <Section
-      className={styles.cultureSection}
+      className={styles.advanceGoalsSection}
       id={getId("Advancing your goals")}
     >
       <SectionHead

@@ -7,7 +7,7 @@ import { getId } from "@/helpers/idHelper";
 const PartnerSection = ({}: any) => {
   return (
     <Section
-      className={styles.cultureSection}
+      className={styles.partnerSection}
       id={getId("Start building a data culture")}
       containerClassName={styles.container}
     >

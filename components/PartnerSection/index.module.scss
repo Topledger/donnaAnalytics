@@ -1,58 +1,58 @@
 @import "@/assets/styles/breakpoints.scss";
 
-.cultureSection {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #2f55d3;
+.partnerSection {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  background-color: #2f55d3 !important;
 
   @include mobile {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
-}
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
-.content {
-  max-width: 40rem;
-
-  .contentTitle {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #ffffff;
-  }
-  .contentDescription {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: #b2c3ff;
-    margin-top: 0.5rem;
-  }
-}
-
-.cultureAction {
-  a {
-    color: #2f55d3;
-    background: #fff;
-    font-size: 14px;
-
-    svg {
-      path {
-        fill: #2f55d3;
-      }
+    @include mobile {
+      flex-direction: column;
     }
   }
 
-  @include mobile {
-    margin-top: 2.5rem;
+  .content {
+    max-width: 40rem;
+
+    .contentTitle {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+    .contentDescription {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.4;
+      color: #b2c3ff;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .cultureAction {
+    a {
+      color: #2f55d3;
+      background: #fff;
+      font-size: 14px;
+
+      svg {
+        path {
+          fill: #2f55d3;
+        }
+      }
+    }
+
+    @include mobile {
+      margin-top: 2.5rem;
+    }
   }
 }

@@ -1,88 +1,88 @@
 @import "@/assets/styles/breakpoints.scss";
 
-.cultureSection {
+.aboutHeroSection {
   padding-top: 104px !important;
   padding-bottom: 104px !important;
   border-top: 1px solid #ffffff;
   background-color: #ffffff;
 
   @include mobile {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
     text-align: center;
   }
-}
 
-.sectionBody {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  .sectionBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
-  @include mobile {
-    gap: 5rem;
-    grid-template-columns: 1fr;
-  }
-}
-
-.sectionHead {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.tagline {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #3257d4;
-}
-
-.sectionTitle {
-  position: relative;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #3c4452;
-  margin-top: 1rem;
-
-  flex-wrap: wrap;
-  span {
-    position: relative;
-    z-index: 1;
-    margin-left: 0.5rem;
-  }
-
-  @include mobile {
-    font-size: 1.5rem;
-    span {
-      margin-left: 0rem;
+    @include mobile {
+      gap: 5rem;
+      grid-template-columns: 1fr;
     }
   }
-}
 
-.sectionDescription {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #67798a;
-  max-width: 400px;
-
-  margin-top: 0.75rem;
-
-  @include mobile {
-    font-size: 1rem;
+  .sectionHead {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
-}
 
-.cultureAction {
-  margin-top: 2rem;
-}
+  .tagline {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #3257d4;
+  }
 
-.image {
-  overflow: hidden;
-  width: 100%;
+  .sectionTitle {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #3c4452;
+    margin-top: 1rem;
 
-  img {
+    flex-wrap: wrap;
+    span {
+      position: relative;
+      z-index: 1;
+      margin-left: 0.5rem;
+    }
+
+    @include mobile {
+      font-size: 1.5rem;
+      span {
+        margin-left: 0rem;
+      }
+    }
+  }
+
+  .sectionDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #67798a;
+    max-width: 400px;
+
+    margin-top: 0.75rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  .cultureAction {
+    margin-top: 2rem;
+  }
+
+  .image {
+    overflow: hidden;
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }

@@ -1,183 +1,183 @@
 @import "@/assets/styles/breakpoints.scss";
 
-.cultureSection {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #ffffff;
-}
+.advanceGoalsSection {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  background-color: #ffffff !important;
 
-.sectionBody {
-  display: flex;
-  gap: 0rem;
-  margin-top: 80px;
+  .sectionBody {
+    display: flex;
+    gap: 0rem;
+    margin-top: 80px;
 
-  @include mobile {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-}
-
-.sectionHead {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 2.5rem;
-}
-
-.sectionTitle {
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #3c4452;
-
-  flex-wrap: wrap;
-  span {
-    position: relative;
-    z-index: 1;
-    margin-left: 0.5rem;
-  }
-
-  @include mobile {
-    font-size: 1.5rem;
-    span {
-      margin-left: 0rem;
+    @include mobile {
+      flex-direction: column;
+      gap: 2.5rem;
     }
   }
-}
 
-.sectionDescription {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #a1aab2;
-
-  margin-top: 0.5rem;
-
-  @include mobile {
-    font-size: 1rem;
-  }
-}
-
-.chartIcons {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  float: right;
-
-  @include mobile {
+  .sectionHead {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2.5rem;
+  }
+
+  .sectionTitle {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #3c4452;
+
     flex-wrap: wrap;
-    margin-top: 2rem;
-    justify-content: space-between;
-  }
-}
+    span {
+      position: relative;
+      z-index: 1;
+      margin-left: 0.5rem;
+    }
 
-.chartIcon {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(41.150001525878906px);
-
-  > img {
-    width: 24px !important;
-    height: 24px !important;
+    @include mobile {
+      font-size: 1.5rem;
+      span {
+        margin-left: 0rem;
+      }
+    }
   }
 
-  @include mobile {
+  .sectionDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #a1aab2;
+
+    margin-top: 0.5rem;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  .chartIcons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    float: right;
+
+    @include mobile {
+      position: relative;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+  }
+
+  .chartIcon {
     width: 56px;
     height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(41.150001525878906px);
+
+    > img {
+      width: 24px !important;
+      height: 24px !important;
+    }
+
+    @include mobile {
+      width: 56px;
+      height: 56px;
+    }
   }
-}
 
-.culture {
-  position: relative;
-  display: flex;
+  .culture {
+    position: relative;
+    display: flex;
 
-  flex-direction: column;
-  padding: 2.5rem;
+    flex-direction: column;
+    padding: 2.5rem;
 
-  @include mobile {
-    border: 1px solid #bfc5e5;
-    padding: 2rem;
+    @include mobile {
+      border: 1px solid #bfc5e5;
+      padding: 2rem;
+    }
   }
-}
 
-.cultureContent {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-}
-
-.bullet {
-  padding-top: 0.5rem;
-}
-
-.cultureTitle {
-  margin-top: 0.5rem;
-  color: #3c4452;
-  font-size: 1rem;
-  font-weight: 700;
-
-  @include mobile {
-    font-size: 1.125rem;
-  }
-}
-.cultureDescription {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #67798a;
-
-  > * {
+  .cultureContent {
     flex: 1;
+    display: flex;
+    gap: 10px;
   }
 
-  @include mobile {
-    font-size: 0.875rem;
+  .bullet {
+    padding-top: 0.5rem;
   }
-}
 
-.cultureAction {
-  width: 100%;
-  margin-top: 0.5rem;
-}
+  .cultureTitle {
+    margin-top: 0.5rem;
+    color: #3c4452;
+    font-size: 1rem;
+    font-weight: 700;
 
-.ideaSection {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    @include mobile {
+      font-size: 1.125rem;
+    }
+  }
+  .cultureDescription {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #67798a;
 
-  > span:first-child {
-    display: inline-block;
+    > * {
+      flex: 1;
+    }
+
+    @include mobile {
+      font-size: 0.875rem;
+    }
+  }
+
+  .cultureAction {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .ideaSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    > span:first-child {
+      display: inline-block;
+      min-width: 32px !important;
+    }
+  }
+  .bottomIcon {
     min-width: 32px !important;
   }
-}
-.bottomIcon {
-  min-width: 32px !important;
-}
-.bottomText {
-  padding: 0;
-  text-wrap: nowrap;
+  .bottomText {
+    padding: 0;
+    text-wrap: nowrap;
 
-  @include mobile {
-    text-wrap: wrap;
+    @include mobile {
+      text-wrap: wrap;
+    }
   }
-}
 
-.image {
-  flex: 1;
+  .image {
+    flex: 1;
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }

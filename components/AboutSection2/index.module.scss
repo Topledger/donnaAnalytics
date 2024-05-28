@@ -1,220 +1,220 @@
 @import "@/assets/styles/breakpoints.scss";
 
-.cultureSection {
+.aboutSection2 {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
-  background-color: #f7fafe;
-}
+  background-color: #f7fafe !important;
 
-.image {
-  position: relative;
-  .imageText1 {
-    position: absolute;
-    left: 3rem;
-    top: 5rem;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #3257d4;
-  }
-  .imageText2 {
-    position: absolute;
-    left: 12rem;
-    top: 9.5rem;
-    width: 10rem;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: #3c4452;
-  }
-
-  @include mobile {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-
+  .image {
+    position: relative;
     .imageText1 {
-      left: 3.1rem;
-      top: 5.85rem;
-      font-size: 12px;
+      position: absolute;
+      left: 3rem;
+      top: 5rem;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: #3257d4;
     }
     .imageText2 {
-      font-size: 12px;
-      left: 10rem;
-      top: 10rem;
-    }
-  }
-}
-
-.sectionHead {
-  justify-content: center;
-  .quote {
-    background-color: #faede1;
-    padding: 2rem;
-    border-radius: 0.5rem;
-
-    .quoteText {
+      position: absolute;
+      left: 12rem;
+      top: 9.5rem;
+      width: 10rem;
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 1.4;
+      letter-spacing: 0.01em;
+      text-align: left;
       color: #3c4452;
     }
-    .quoteAuthor {
+
+    @include mobile {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+
+      .imageText1 {
+        left: 3.1rem;
+        top: 5.85rem;
+        font-size: 12px;
+      }
+      .imageText2 {
+        font-size: 12px;
+        left: 10rem;
+        top: 10rem;
+      }
+    }
+  }
+
+  .sectionHead {
+    justify-content: center;
+    .quote {
+      background-color: #faede1;
+      padding: 2rem;
+      border-radius: 0.5rem;
+
+      .quoteText {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.4;
+        color: #3c4452;
+      }
+      .quoteAuthor {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.4;
+        color: #70798a;
+        margin-top: 1.5rem;
+      }
+
+      @include mobile {
+        padding: 2rem 1rem;
+      }
+    }
+    .description {
       font-size: 1rem;
       font-weight: 500;
       line-height: 1.4;
-      color: #70798a;
+      color: #67798a;
       margin-top: 1.5rem;
     }
 
     @include mobile {
-      padding: 2rem 1rem;
+      flex-direction: column;
+      gap: 56px;
     }
   }
-  .description {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: #67798a;
-    margin-top: 1.5rem;
+
+  .sectionBody {
+    display: flex;
+    gap: 10rem;
+    @include mobile {
+      margin-top: auto;
+    }
   }
 
-  @include mobile {
-    flex-direction: column;
-    gap: 56px;
-  }
-}
-
-.sectionBody {
-  display: flex;
-  gap: 10rem;
-  @include mobile {
-    margin-top: auto;
-  }
-}
-
-.sectionHead {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.sectionTitle {
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #3c4452;
-
-  flex-wrap: wrap;
-  span {
+  .sectionHead {
     position: relative;
-    z-index: 1;
-    margin-left: 0.5rem;
-  }
-
-  @include mobile {
-    font-size: 1.5rem;
-    span {
-      margin-left: 0rem;
-    }
-  }
-}
-
-.sectionDescription {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #a1aab2;
-
-  margin-top: 0.5rem;
-
-  @include mobile {
-    font-size: 1rem;
-  }
-}
-
-.culture {
-  position: relative;
-  display: flex;
-
-  flex-direction: column;
-  padding: 2.5rem;
-
-  @include mobile {
-    border: 1px solid #bfc5e5;
-    padding: 2rem;
-  }
-}
-
-.cultureContent {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-}
-
-.bullet {
-  padding-top: 0.5rem;
-}
-
-.cultureTitle {
-  margin-top: 0.5rem;
-  color: #3c4452;
-  font-size: 1rem;
-  font-weight: 700;
-
-  @include mobile {
-    font-size: 1.125rem;
-  }
-}
-.cultureDescription {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  margin-top: 0.5rem;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #67798a;
-
-  > * {
+    display: flex;
+    flex-direction: column;
     flex: 1;
   }
 
-  @include mobile {
-    font-size: 0.875rem;
+  .sectionTitle {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #3c4452;
+
+    flex-wrap: wrap;
+    span {
+      position: relative;
+      z-index: 1;
+      margin-left: 0.5rem;
+    }
+
+    @include mobile {
+      font-size: 1.5rem;
+      span {
+        margin-left: 0rem;
+      }
+    }
   }
-}
 
-.cultureAction {
-  width: 100%;
-  margin-top: 0.5rem;
-}
+  .sectionDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #a1aab2;
 
-.ideaSection {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    margin-top: 0.5rem;
 
-  > span:first-child {
-    display: inline-block;
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  .culture {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    padding: 2.5rem;
+
+    @include mobile {
+      border: 1px solid #bfc5e5;
+      padding: 2rem;
+    }
+  }
+
+  .cultureContent {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+  }
+
+  .bullet {
+    padding-top: 0.5rem;
+  }
+
+  .cultureTitle {
+    margin-top: 0.5rem;
+    color: #3c4452;
+    font-size: 1rem;
+    font-weight: 700;
+
+    @include mobile {
+      font-size: 1.125rem;
+    }
+  }
+  .cultureDescription {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #67798a;
+
+    > * {
+      flex: 1;
+    }
+
+    @include mobile {
+      font-size: 0.875rem;
+    }
+  }
+
+  .cultureAction {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .ideaSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    > span:first-child {
+      display: inline-block;
+      min-width: 32px !important;
+    }
+  }
+  .bottomIcon {
     min-width: 32px !important;
   }
-}
-.bottomIcon {
-  min-width: 32px !important;
-}
-.bottomText {
-  padding: 0;
-  text-wrap: nowrap;
+  .bottomText {
+    padding: 0;
+    text-wrap: nowrap;
 
-  @include mobile {
-    text-wrap: wrap;
+    @include mobile {
+      text-wrap: wrap;
+    }
   }
 }

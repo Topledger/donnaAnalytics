@@ -37,7 +37,7 @@ const EnhanceBusinessResultsSection = ({
 }) => {
   return (
     <Section
-      className={styles.cultureSection}
+      className={styles.enhanceBusinessResultSection}
       id={getId("Enhance business results")}
     >
       <SectionHead

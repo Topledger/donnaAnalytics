@@ -53,7 +53,7 @@ const EmpoweringJourneySection = ({ journeys = [] }: { journeys: any[] }) => {
 
   return (
     <Section
-      className={styles.cultureSection}
+      className={styles.empoweringJourneySection}
       id={getId("Empowering Your Blockchain Journey")}
     >
       <SectionHead
