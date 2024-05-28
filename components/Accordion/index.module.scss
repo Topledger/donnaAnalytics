@@ -20,7 +20,7 @@
 
 .accordionTitle {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #3c4452;
 }
 
@@ -33,14 +33,15 @@
 }
 
 .accordionContent {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: #67798a;
+  font-size: 14px;
 
   .description {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .image {
