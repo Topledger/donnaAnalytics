@@ -11,7 +11,7 @@
 }
 
 .accordionHeader {
-  padding: 1rem;
+  padding: 0.25rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .accordionContent {
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -41,7 +41,7 @@
   font-size: 14px;
 
   .description {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .image {
@@ -49,5 +49,6 @@
     justify-content: center;
     img {
     }
+    margin-bottom: 2rem;
   }
 }
