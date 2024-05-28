@@ -24,7 +24,11 @@ const Accordion: React.FC<AccordionProps> = ({
       <div className={styles.accordionHeader} onClick={onToggle}>
         <h3 className={styles.accordionTitle}>{title}</h3>
         <span className={styles.accordionIcon}>
-          {isOpen ? "" : <DownOutlined width="1rem" height="1rem" />}
+          {isOpen ? (
+            ""
+          ) : (
+            <DownOutlined width="1rem" height="1rem" color="#001A72" />
+          )}
         </span>
       </div>
       {isOpen && (
