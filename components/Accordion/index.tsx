@@ -31,16 +31,14 @@ const Accordion: React.FC<AccordionProps> = ({
           )}
         </span>
       </div>
-      {isOpen && (
-        <div className={styles.accordionContent}>
-          <div className={styles.description}>
-            <span>{description}</span>
-          </div>
-          <div className={styles.image}>
-            <Image src={image} alt={title} width={240} height={208} />
-          </div>
+      <div className={styles.accordionContent}>
+        <div className={styles.description}>
+          <span>{description}</span>
         </div>
-      )}
+        <div className={styles.image}>
+          <Image src={image} alt={title} width={240} height={208} />
+        </div>
+      </div>
     </div>
   );
 };
