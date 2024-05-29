@@ -5,13 +5,14 @@ import { getId } from "@/helpers/idHelper";
 import SectionHead from "../SectionHead";
 
 import styles from "./index.module.scss";
+import { basepath } from "@/helpers/constants";
 
 const Goal = ({ title, description }: any) => {
   return (
     <div className={styles.cultureContent}>
       <div className={styles.bullet}>
         <Image
-          src="/assets/images/bullet.svg"
+          src={`${basepath}/assets/images/bullet.svg`}
           width={21}
           height={20}
           alt="bullet"
@@ -42,7 +43,7 @@ const AdvanceGoalsSection = ({ goals = [] }: { goals: any[] }) => {
       <div className={styles.sectionBody}>
         <div className={styles.image}>
           <Image
-            src="/assets/images/advancing-goals.svg"
+            src={`${basepath}/assets/images/advancing-goals.svg`}
             width={334}
             height={296}
             alt="Advancing your goals"

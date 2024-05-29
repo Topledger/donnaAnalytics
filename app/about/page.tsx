@@ -3,11 +3,12 @@ import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import PartnerSection from "@/components/PartnerSection";
 import AboutHeroSection from "@/components/AboutHeroSection";
 import AboutSection2 from "@/components/AboutSection2";
+import { basepath } from "@/helpers/constants";
 
 const successStories = [
   {
     id: 1,
-    image: "/assets/images/success-stories-1.svg",
+    image: `${basepath}/assets/images/success-stories-1.svg`,
     title: "Drift Protocol's Data-Driven Journey",
     description: "Fast SQL queries with our automated scaling and replication.",
     action: {
@@ -18,7 +19,7 @@ const successStories = [
   },
   {
     id: 2,
-    image: "/assets/images/success-stories-2.svg",
+    image: `${basepath}/assets/images/success-stories-2.svg`,
     title: "Squads Leverages Our Platform",
     description:
       "AI-powered interface boosts quick, intelligent data analysis.",
@@ -30,7 +31,7 @@ const successStories = [
   },
   {
     id: 3,
-    image: "/assets/images/success-stories-3.svg",
+    image: `${basepath}/assets/images/success-stories-3.svg`,
     title: "Linking real‑world data to blockchains",
     description: "Our APIs Streamline Solana development and data management.",
     action: {
@@ -47,7 +48,7 @@ export default function Home() {
       <AboutHeroSection
         tagline="Insight Amplified"
         title="In a complex world clouded with ambiguity, certainty is power"
-        image="/assets/images/about-hero.svg"
+        image=`${basepath}/assets/images/about-hero.svg`
       />
       <AboutSection2 />
       <SuccessStoriesSection stories={successStories} />

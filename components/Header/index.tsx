@@ -12,6 +12,7 @@ import MobileOnly from "../MobileOnly";
 
 import styles from "./index.module.scss";
 import { getId } from "@/helpers/idHelper";
+import { basepath } from "@/helpers/constants";
 
 const BurgerButton = ({
   className,
@@ -57,7 +58,7 @@ const Header = ({ className }: { className?: string }) => {
       <span className={styles.headerWrapper}>
         <Button.Link className={styles.logoContainer} href="/" tertiary>
           <Image
-            src={"/assets/images/logo/donna-analytics-full.svg"}
+            src={`${basepath}/assets/images/logo/donna-analytics-full.svg`}
             width={122}
             height={24}
             alt="Top Ledger logo"

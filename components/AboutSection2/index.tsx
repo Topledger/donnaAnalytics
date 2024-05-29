@@ -8,11 +8,12 @@ import { getId } from "@/helpers/idHelper";
 import styles from "./index.module.scss";
 import MobileHidden from "../MobileHidden";
 import MobileOnly from "../MobileOnly";
+import { basepath } from "@/helpers/constants";
 
 const ImageSegment = ({ className, ...props }: any) => (
   <div className={cx(styles.image, className)} {...props}>
     <Image
-      src="/assets/images/about-section-2.svg"
+      src={`${basepath}/assets/images/about-section-2.svg`}
       width={410}
       height={351}
       alt="Advancing your goals"

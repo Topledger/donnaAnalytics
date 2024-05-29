@@ -17,6 +17,7 @@ import { postFeedback } from "@/queries";
 
 import styles from "./index.module.scss";
 import Icon from "../Icon";
+import { basepath } from "@/helpers/constants";
 
 const isValid = (value: any, validations: any[]) => {
   return validations.every((validation) => validation(value));
@@ -217,7 +218,7 @@ const QueryForm = ({ hide }: { hide?: () => void }) => {
                 <div className={styles.imageContainer}>
                   <Image
                     className={styles.image}
-                    src="/assets/images/feedback-left.svg"
+                    src={`${basepath}/assets/images/feedback-left.svg`}
                     alt="rocket"
                     width={240}
                     height={207}

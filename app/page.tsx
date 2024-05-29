@@ -8,6 +8,7 @@ import AdvanceGoalsSection from "@/components/AdvanceGoalsSection";
 import EmpoweringJourneySection from "@/components/EmpoweringJourneySection";
 import HomeHeroSection from "@/components/HomeHeroSection";
 import PartnerSection from "@/components/PartnerSection";
+import { basepath } from "@/helpers/constants";
 
 const dataCultures = [
   {
@@ -32,7 +33,7 @@ const dataCultures = [
 const results = [
   {
     id: 1,
-    image: "/assets/images/results/analysts.svg",
+    image: `${basepath}/assets/images/results/analysts.svg`,
     title: "For analysts",
     description: "Fast SQL queries with our automated scaling and replication.",
     action: {
@@ -43,7 +44,7 @@ const results = [
   },
   {
     id: 2,
-    image: "/assets/images/results/business.svg",
+    image: `${basepath}/assets/images/results/business.svg`,
     title: "For business",
     description:
       "AI-powered interface boosts quick, intelligent data analysis.",
@@ -55,7 +56,7 @@ const results = [
   },
   {
     id: 3,
-    image: "/assets/images/results/developers.svg",
+    image: `${basepath}/assets/images/results/developers.svg`,
     title: "For developers",
     description: "Our APIs Streamline Solana development and data management.",
     action: {
@@ -72,7 +73,7 @@ const journeys = [
     title: "Comprehensive Data Analysis",
     description:
       "Gain deep insights with our thorough analysis of historical blockchain data, helping you understand long-term trends and cycles.",
-    image: "/assets/images/journey-data-analysis.webp",
+    image: `${basepath}/assets/images/journey-data-analysis.webp`,
     action: {
       forwardArrow: true,
       type: "link",
@@ -86,7 +87,7 @@ const journeys = [
     title: "Customizable Dashboards",
     description:
       "Tailor your data viewing experience with customizable dashboards that highlight the metrics most important to you.",
-    image: "/assets/images/journey-dashboards-.svg",
+    image: `${basepath}/assets/images/journey-dashboards-.svg`,
     action: {
       forwardArrow: true,
       type: "link",
@@ -100,7 +101,7 @@ const journeys = [
     title: "Expert Support",
     description:
       "Our team of data experts is here to provide dedicated support and assist you in understanding and utilizing the data effectively.",
-    image: "/assets/images/journey-expert-support.svg",
+    image: `${basepath}/assets/images/journey-expert-support.svg`,
     action: {
       forwardArrow: true,
       type: "link",
@@ -139,7 +140,7 @@ export default function Home() {
         tagline="Insight Amplified"
         title="Turn data into decisions"
         description="Uncover Hidden Patterns. Fuel Innovation. Achieve Unmatched Clarity and Growth."
-        image="/assets/images/home-hero.svg"
+        image=`${basepath}/assets/images/home-hero.svg`
       />
       <EmpoweringJourneySection journeys={journeys} />
       <AdvanceGoalsSection goals={goals} />

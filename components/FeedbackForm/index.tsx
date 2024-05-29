@@ -8,6 +8,7 @@ import Portal from "@/components/Portal";
 import styles from "./index.module.scss";
 import Rating from "./Rating";
 import { postFeedback } from "@/queries";
+import { basepath } from "@/helpers/constants";
 
 function FeedbackForm({}) {
   const [open, setOpen] = useState<any>();
@@ -93,7 +94,10 @@ function FeedbackForm({}) {
           rel="noreferrer"
           ref={setTalkToUsEl}
         >
-          <img draggable="false" src="/assets/images/telegram-icon.svg" />
+          <img
+            draggable="false"
+            src={`${basepath}/assets/images/telegram-icon.svg`}
+          />
           Talk to us
         </a>
       </div>
@@ -134,7 +138,7 @@ function FeedbackForm({}) {
                     <Image
                       width={141}
                       height={141}
-                      src="/assets/images/feedback-success.png"
+                      src={`${basepath}/assets/images/feedback-success.png`}
                       alt="Success"
                     />
                   </div>
