@@ -48,7 +48,7 @@ export default function Home() {
       <AboutHeroSection
         tagline="Insight Amplified"
         title="In a complex world clouded with ambiguity, certainty is power"
-        image=`${basepath}/assets/images/about-hero.svg`
+        image={`${basepath}/assets/images/about-hero.svg`}
       />
       <AboutSection2 />
       <SuccessStoriesSection stories={successStories} />

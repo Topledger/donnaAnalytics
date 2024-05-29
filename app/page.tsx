@@ -140,7 +140,7 @@ export default function Home() {
         tagline="Insight Amplified"
         title="Turn data into decisions"
         description="Uncover Hidden Patterns. Fuel Innovation. Achieve Unmatched Clarity and Growth."
-        image=`${basepath}/assets/images/home-hero.svg`
+        image={`${basepath}/assets/images/home-hero.svg`}
       />
       <EmpoweringJourneySection journeys={journeys} />
       <AdvanceGoalsSection goals={goals} />
