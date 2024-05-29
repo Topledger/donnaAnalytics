@@ -8,6 +8,7 @@ import SectionHead from "../SectionHead";
 import MobileHidden from "../MobileHidden";
 import MobileOnly from "../MobileOnly";
 import styles from "./index.module.scss";
+import { basepath } from "@/helpers/constants";
 
 const Culture = ({
   title,
@@ -30,7 +31,9 @@ const Culture = ({
                   style={{ backgroundColor: color }}
                 >
                   <Image
-                    src={`/assets/images/landing/culture-icon-${index + 1}.svg`}
+                    src={`${basepath}/assets/images/landing/culture-icon-${
+                      index + 1
+                    }.svg`}
                     width={100}
                     height={100}
                     alt={`culture-icon-${index + 1}`}
@@ -68,7 +71,9 @@ const DataCultureSection = ({ dataCultures = [] }: any) => {
                 style={{ backgroundColor: color }}
               >
                 <Image
-                  src={`/assets/images/landing/culture-icon-${index + 1}.svg`}
+                  src={`${basepath}/assets/images/landing/culture-icon-${
+                    index + 1
+                  }.svg`}
                   width={100}
                   height={100}
                   alt={`culture-icon-${index + 1}`}

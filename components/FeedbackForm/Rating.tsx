@@ -2,6 +2,7 @@ import cx from "classnames";
 import Image from "next/image";
 
 import styles from "./Rating.module.scss";
+import { basepath } from "@/helpers/constants";
 
 const ratingList = [
   {
@@ -11,7 +12,7 @@ const ratingList = [
       <Image
         width={40}
         height={40}
-        src={`/assets/images/ratings/rating-1${
+        src={`${basepath}/assets/images/ratings/rating-1${
           selected ? "-selected" : ""
         }.png`}
         alt="1 Star"
@@ -25,7 +26,7 @@ const ratingList = [
       <Image
         width={40}
         height={40}
-        src={`/assets/images/ratings/rating-2${
+        src={`${basepath}/assets/images/ratings/rating-2${
           selected ? "-selected" : ""
         }.png`}
         alt="2 Star"
@@ -39,7 +40,7 @@ const ratingList = [
       <Image
         width={40}
         height={40}
-        src={`/assets/images/ratings/rating-3${
+        src={`${basepath}/assets/images/ratings/rating-3${
           selected ? "-selected" : ""
         }.png`}
         alt="3 Star"
@@ -53,7 +54,7 @@ const ratingList = [
       <Image
         width={40}
         height={40}
-        src={`/assets/images/ratings/rating-4${
+        src={`${basepath}/assets/images/ratings/rating-4${
           selected ? "-selected" : ""
         }.png`}
         alt="4 Star"
@@ -67,7 +68,7 @@ const ratingList = [
       <Image
         width={40}
         height={40}
-        src={`/assets/images/ratings/rating-5${
+        src={`${basepath}/assets/images/ratings/rating-5${
           selected ? "-selected" : ""
         }.png`}
         alt="5 Star"

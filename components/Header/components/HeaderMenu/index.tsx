@@ -4,11 +4,10 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
-
 import Icon from "@/components/Icon";
 
 import styles from "./index.module.scss";
-
+import { basepath } from "@/helpers/constants";
 
 const MenuItem = ({
   icon,
@@ -20,27 +19,30 @@ const MenuItem = ({
   onClick,
 }: any) => {
   return (
-    <Link href={comingSoon ? "" : href} className={styles.headerMenuItem} target={target} onClick={onClick}>
-        <Image
-          className={styles.headerMenuItemIcon}
-          src={`/assets/images/header/menu-item-${icon}.svg`}
-          width={64}
-          height={64}
-          alt={icon}
-        />
-        <div className={styles.headerMenuItemContent}>
-          <span
-            className={styles.menuItemTitle}
-            // href={href}
-            style={{ padding: 0 }}
-          >
-            {title}{" "}
-            {comingSoon && (
-              <span className={styles.comingSoon}>Coming soon</span>
-            )}
-          </span>
-          <p className={styles.headerMenuItemDescription}>{description}</p>
-        </div>
+    <Link
+      href={comingSoon ? "" : href}
+      className={styles.headerMenuItem}
+      target={target}
+      onClick={onClick}
+    >
+      <Image
+        className={styles.headerMenuItemIcon}
+        src={`${basepath}/assets/images/header/menu-item-${icon}.svg`}
+        width={64}
+        height={64}
+        alt={icon}
+      />
+      <div className={styles.headerMenuItemContent}>
+        <span
+          className={styles.menuItemTitle}
+          // href={href}
+          style={{ padding: 0 }}
+        >
+          {title}{" "}
+          {comingSoon && <span className={styles.comingSoon}>Coming soon</span>}
+        </span>
+        <p className={styles.headerMenuItemDescription}>{description}</p>
+      </div>
     </Link>
   );
 };
